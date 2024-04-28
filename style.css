@@ -96,6 +96,9 @@ a{
 }
 
 .tech{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: var(--transp-black);
     height: 100vh ;
 }
@@ -228,6 +231,10 @@ body.no-scroll {
 
     .tech-logo{
         width: 50px;
+    }
+
+    .hidden{
+        transform: translateX(-80vw);
     }
 
   }
