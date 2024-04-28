@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Frontend Academy</title>
+    </head>
+    <body>
+        <header class="nav-bar" id="nav">
+            <div><img src="./assets/convox-icon.svg" class="logo" alt="academy logo"></div>
+            <nav class="nav-items">
+                <li class="list-item"><a href="">My Courses</a></li>
+                <li class="list-item"><a href="">Premium</a></li>
+                <li class="list-item"><a href="">Blog</a></li>
+            </nav>
+        </header>
+        <section class="welcome">
+            <div class="welcome-text">
+                <h1 class="title">
+                Frontend Academy
+                </h1>
+                <button class="button" id="btn">SIGN IN</button>
+            </div>
+        </section>
+        <section class="tech-section">
+            <div class="tech">
+                <div class="card c-html">
+                    <img src="./assets/html.svg" class="tech-logo html" alt="html logo">
+                    <p class="card_description">
+                        HTML, the backbone of web development, structures web pages with its markup language, defining content and layout
+                    </p>
+                </div>
+                <div class="card c-css">
+                    <img src="./assets/css.svg" class="tech-logo css" alt="css logo">
+                    <p class="card_description">
+                        CSS, the design language of the web, adds style and visual appeal to HTML elements, 
+                        transforming them into beautifully crafted user interfaces.
+                    </p>
+                </div>
+                <div class="card c-js">
+                    <img src="./assets/js.svg" class="tech-logo js" alt="javasript logo">
+                    <p class="js-text card_description">
+                        JavaScript, the dynamic language of the web, breathes life into static web pages, enabling interactive features and functionality.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <aside class="aside-form hidden" id="lateral-form">
+            <h3 class="form-title">Build a career with us</h3>
+            <h4 class="form-subtitle" >Register</h4>
+            <hr>
+            <form action="#" class="form">
+                <label class="label">
+                    <input type="text" class="inp" pattern="[A-Za-z\s]+" required id="name" placeholder="Name" name="name">
+                </label>
+                <label class="label">
+                    <input type="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" class="inp" required id="email" placeholder="Email" name="email">
+                </label>
+                <label class="label">
+                    <input type="tel" pattern="[0-9]*" class="inp" id="phone" placeholder="Phone" name="tel">
+                </label>
+                <input class="subm" id="subm" type="submit" value="Enrollment">
+            </form>
+            <button class="close" id="close-btn">X</button>
+        </aside>
+    <script src="./script.js"></script>
+</body>
+</html>
