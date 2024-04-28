@@ -9,13 +9,23 @@ const inpSub = document.getElementById("subm");
 btn.addEventListener("click", () => {
   window.scrollTo({
     top: 0,
-    behavior: "smooth", // Desplazamiento suave
+    behavior: "smooth",
   });
   aside.classList.toggle("hidden");
+  if (!aside.classList.contains("hidden")) {
+    document.body.classList.add("no-scroll");
+  } else {
+    document.body.classList.remove("no-scroll");
+  }
 });
 
 closeBtn.addEventListener("click", () => {
   aside.classList.toggle("hidden");
+  if (!aside.classList.contains("hidden")) {
+    document.body.classList.add("no-scroll");
+  } else {
+    document.body.classList.remove("no-scroll");
+  }
 });
 
 inpSub.addEventListener("click", (e) => {
@@ -27,5 +37,5 @@ inpSub.addEventListener("click", (e) => {
   ) {
     alert("Welcome to FRONTEND ACADEMY");
   }
-  inpSub.onsubmit();
+  inpSub.submit();
 });
