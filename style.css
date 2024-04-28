@@ -136,9 +136,18 @@ a{
     height: 100%;
 }
 
+/* lateral form animations */
+
 .hidden{
-    transform: translateX(-500px);
+    transform: translateX(-50vw);
 }
+
+body.no-scroll {
+    overflow: hidden;
+}
+
+
+/* lateral form animations */
 
 .form{
     display: flex;
