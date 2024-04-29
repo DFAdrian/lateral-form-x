@@ -1,6 +1,7 @@
 const aside = document.getElementById("lateral-form");
 const btn = document.getElementById("btn");
 const closeBtn = document.getElementById("close-btn");
+const myForm = document.getElementById("myForm");
 const inpName = document.getElementById("name");
 const email = document.getElementById("email");
 const phone = document.getElementById("phone");
@@ -37,5 +38,5 @@ inpSub.addEventListener("click", (e) => {
   ) {
     alert("Welcome to FRONTEND ACADEMY");
   }
-  inpSub.submit();
+  myForm.submit();
 });
