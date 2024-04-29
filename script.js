@@ -29,7 +29,7 @@ closeBtn.addEventListener("click", () => {
   }
 });
 
-inpSub.addEventListener("click", (e) => {
+myForm.addEventListener("submit", (e) => {
   // e.preventDefault();
   if (
     inpName.checkValidity() &&
