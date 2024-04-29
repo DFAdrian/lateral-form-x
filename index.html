@@ -55,10 +55,10 @@
                     <input type="text" class="inp" pattern="[A-Za-z\s]+" required id="name" placeholder="Name" name="name">
                 </label>
                 <label class="label">
-                    <input type="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" class="inp" required id="email" placeholder="Email" name="email">
+                    <input type="email" pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$" class="inp" required id="email" placeholder="Email" name="email">
                 </label>
                 <label class="label">
-                    <input type="tel" pattern="[0-9]*" class="inp" id="phone" placeholder="Phone" name="tel">
+                    <input type="tel" pattern="[0-9]*" class="inp" required id="phone" placeholder="Phone" name="tel">
                 </label>
                 <input class="subm" id="subm" type="submit" value="Enrollment">
             </form>
